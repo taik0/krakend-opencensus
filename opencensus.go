@@ -124,6 +124,13 @@ type Config struct {
 			SecretKey string `json:"secret_access_key"`
 			Version   string `json:"version"`
 		} `json:"xray"`
+		Datadog *struct {
+			Namespace string   `json:"namespace"`
+			Service   string   `json:"service"`
+			TraceAddr string   `json:"trace_address"`
+			StatsAddr string   `json:"stats_address"`
+			Tags      []string `json:"tags"`
+		} `json:"datadog"`
 	} `json:"exporters"`
 }
 

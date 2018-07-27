@@ -9,6 +9,18 @@
   source = "github.com/apache/thrift"
 
 [[projects]]
+  name = "github.com/DataDog/datadog-go"
+  packages = ["statsd"]
+  revision = "e67964b4021ad3a334e748e8811eb3cd6becbc6e"
+  version = "2.1.0"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/DataDog/opencensus-go-exporter-datadog"
+  packages = ["."]
+  revision = "103e096f98c8a0cb53136dc1e295923f61d3b14b"
+
+[[projects]]
   name = "github.com/aws/aws-sdk-go"
   packages = [
     "aws",
@@ -148,6 +160,12 @@
   version = "v0.1.0"
 
 [[projects]]
+  name = "github.com/philhofer/fwd"
+  packages = ["."]
+  revision = "bb6d471dc95d4fe11e432687f8b70ff496cf3136"
+  version = "v1.0.0"
+
+[[projects]]
   name = "github.com/prometheus/client_golang"
   packages = [
     "prometheus",
@@ -182,6 +200,12 @@
     "xfs"
   ]
   revision = "8b1c2da0d56deffdbb9e48d4414b4e674bd8083e"
+
+[[projects]]
+  name = "github.com/tinylib/msgp"
+  packages = ["msgp"]
+  revision = "b2b6a672cf1e5b90748f79b8b81fc8c5cf0571a1"
+  version = "1.0.2"
 
 [[projects]]
   name = "github.com/ugorji/go"
@@ -236,6 +260,12 @@
   revision = "2b26f0d5dbe6eea8c0924349bb024673f8105fd9"
 
 [[projects]]
+  name = "gopkg.in/DataDog/dd-trace-go.v1"
+  packages = ["ddtrace/ext"]
+  revision = "d052956664af54dbcff2712d10c67c76fbfc299f"
+  version = "v1.0.0"
+
+[[projects]]
   name = "gopkg.in/go-playground/validator.v8"
   packages = ["."]
   revision = "5f1438d3fca68893a817e4a66806cea46a9e4ebf"
@@ -250,6 +280,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "e9ab02d41923dd1515d1a7469cf82491b40e2486da3b7784965c992161642b58"
+  inputs-digest = "92683dab53441eeeb37adb7a09712cf5c9080ddbf35933fd2469b0ea3dee8fad"
   solver-name = "gps-cdcl"
   solver-version = 1
